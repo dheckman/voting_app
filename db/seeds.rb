@@ -8,11 +8,10 @@
 
 Candidate.delete_all
 Voter.delete_all
-Vote.delete_all
 
 
 c1 = Candidate.create(name: "Bob", party: "Democrat")
 c2 = Candidate.create(name: "Jim", party: "Republican")
 v1 = Voter.create(name: "Sidney", party: "Republican")
 v2 = Voter.create(name: "Heather", party: "Independent")
-vote = Vote.create(voter_id: 1, candidate: c1)
+vote = Vote.create(voter: v1, candidate: c1)

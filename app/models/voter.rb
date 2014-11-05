@@ -4,7 +4,7 @@ class Voter < ActiveRecord::Base
   validates :name, presence: true
   validates :party, presence: true
 
-  has_one :vote
+  has_many :votes
 
   before_save :add_token
 
