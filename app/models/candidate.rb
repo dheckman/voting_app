@@ -8,10 +8,7 @@ has_many :votes
     hash = {id: id,
             name: name,
             party: party }
-    if options[:include_token]
-      hash.merge!(token: token)
-    end
-
+  
     {candidate: hash}
   end
 end
